@@ -1,0 +1,11 @@
+.imagens {
+    height: 30px;
+    width: 30px;
+    display: flex;
+   
+}
+#logos {
+    margin: 2.5px;
+    text-align: center;
+     margin-inline: 5.75em;
+}

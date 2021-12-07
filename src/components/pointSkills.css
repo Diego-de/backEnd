@@ -1,0 +1,15 @@
+h2{
+    text-align: center;
+    color: black;
+}   
+.resultforskill{
+    height: 350px;
+    width: 842px;
+}
+#img-skills {
+    text-align: center;
+    height: 280px;
+    width: 350px;
+    margin-left: 17em;
+    margin-right: 10em;
+}

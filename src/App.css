@@ -1,0 +1,19 @@
+.linha{
+  text-align: center;
+  border: 5px solid #F3AD2E;
+
+}
+.container {
+  flex-flow: row wrap;
+	margin: 0 auto;
+	display: flex;
+}
+#result{
+  flex: 3;
+	margin: 5px;
+
+}
+
+
+
+

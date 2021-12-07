@@ -1,0 +1,15 @@
+h2{
+    color: black;
+    text-align: center;
+} 
+.trilha{
+    height: 300px;
+    width: 400px;
+ 
+}
+#img-trilha {
+    height: 200px;
+   text-align: center;
+   margin-left: 5em;
+   
+}
