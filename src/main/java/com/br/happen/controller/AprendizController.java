@@ -3,6 +3,7 @@ package com.br.happen.controller;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -14,6 +15,7 @@ import com.br.happen.entities.Aprendiz;
 import com.br.happen.service.AprendizService;
 import java.net.URI;
 
+@CrossOrigin(origins = "https://weak-birthday.surge.sh/")
 @RestController
 @RequestMapping("/aprendiz")
 public class AprendizController {

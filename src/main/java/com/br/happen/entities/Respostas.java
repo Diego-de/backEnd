@@ -37,14 +37,36 @@ public class Respostas implements Serializable{
 	@JoinColumn(name="perguntas_id")
 	private Perguntas perguntas;
 	
+	
 	public Respostas() {
 		
 	}
 
-	public Respostas(Long id, double pontuacao) {
+	public Respostas(Long id, double pontuacao, Perguntas perguntas,Aprendiz aprendiz) {
 		this.id = id;
 		this.pontuacao = pontuacao;
+		this.aprendiz = aprendiz;
+		this.perguntas = perguntas;
 	}
+
+	
+	
+	public Aprendiz getAprendiz() {
+		return aprendiz;
+	}
+
+	public void setAprendiz(Aprendiz aprendiz) {
+		this.aprendiz = aprendiz;
+	}
+
+	public Perguntas getPerguntas() {
+		return perguntas;
+	}
+
+	public void setPerguntas(Perguntas perguntas) {
+		this.perguntas = perguntas;
+	}
+
 
 	public Long getId() {
 		return id;
@@ -63,9 +85,6 @@ public class Respostas implements Serializable{
 	}
 
 
-
-	
-	
 	
 	@Override
 	public int hashCode() {

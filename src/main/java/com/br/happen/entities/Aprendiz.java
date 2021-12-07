@@ -25,16 +25,16 @@ public class Aprendiz implements Serializable{
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+	private int id;
 	
 	@Column(length = 50, nullable = false )
 	private String nomeCompleto;
-	@Column(length = 40, nullable = false)
-	private String emailOuWhatSapp;
-	@Column(length = 30)
-	private String areaAtuacao;
+//	@Column(length = 40, nullable = false)
+//	private String emailOuWhatSapp;
+//	@Column(length = 30)
+//	private String areaAtuacao;
 	@Column(length = 15, nullable = false)
-	private String formaAprendizado;
+	private String  formaAprendizado;
 	@Column(length = 15, nullable = false)
 	private int tempoDiario;
 
@@ -55,13 +55,11 @@ public class Aprendiz implements Serializable{
 	}
 	
 	
-	public Aprendiz(String nome, Long id, String sobrenome, String emailOuWhatSapp, String areaAtuacao,
+	public Aprendiz(String nome, int id, String emailOuWhatSapp, String areaAtuacao,
 	 String formaAprendizado,int tempoDiario) {
 		super();
 		this.nomeCompleto = nome;
 		this.id = id;
-		this.emailOuWhatSapp = emailOuWhatSapp;
-		this.areaAtuacao = areaAtuacao;
 		this.formaAprendizado = formaAprendizado;
 		this.tempoDiario = tempoDiario;
 	}
@@ -74,29 +72,29 @@ public class Aprendiz implements Serializable{
 		this.nomeCompleto = nome;
 	}
 
-	public Long getId() {
+	public int getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
-	public String getEmailOuWhatSapp() {
-		return emailOuWhatSapp;
-	}
+//	public String getEmailOuWhatSapp() {
+//		return emailOuWhatSapp;
+//	}
+//
+//	public void setEmailOuWhatSapp(String emailOuWhatSapp) {
+//		this.emailOuWhatSapp = emailOuWhatSapp;
+//	}
 
-	public void setEmailOuWhatSapp(String emailOuWhatSapp) {
-		this.emailOuWhatSapp = emailOuWhatSapp;
-	}
-
-	public String getAreaAtuação() {
-		return areaAtuacao;
-	}
-
-	public void setAreaAtuação(String areaAtuação) {
-		this.areaAtuacao = areaAtuação;
-	}
+//	public String getAreaAtuação() {
+//		return areaAtuacao;
+//	}
+//
+//	public void setAreaAtuação(String areaAtuação) {
+//		this.areaAtuacao = areaAtuação;
+//	}
 
 
 	public int gettempoDiario() {
